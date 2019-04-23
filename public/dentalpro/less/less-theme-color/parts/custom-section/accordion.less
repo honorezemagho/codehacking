@@ -1,0 +1,46 @@
+/*
+ *  accordion.less
+ * -----------------------------------------------
+*/
+.accordion-theme-colored {
+	.panel-default > .panel-heading {
+		background-color:@theme-color;
+		.panel-title > a,
+		.panel-title > a:hover,
+		.panel-title > a:focus {
+			color: #fff;
+		}
+	}
+}
+.panel-group {
+	&.accordion-icon-filled {
+		&.accordion-icon-left {
+			&.accordion-icon-filled-theme-colored {
+				.panel-heading {
+					.panel-title {
+						a {
+							&:before {
+								background-color:@theme-color;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.accordion-icon-right {
+			&.accordion-icon-filled-theme-colored {
+				.panel-heading {
+					.panel-title {
+						a {
+							&:after {
+								background-color:@theme-color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@import "accordion2.less";

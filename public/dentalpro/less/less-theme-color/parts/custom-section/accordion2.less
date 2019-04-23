@@ -1,0 +1,44 @@
+
+.accordion-theme-colored2 {
+	.panel-default > .panel-heading {
+		background-color:@theme-color2;
+		.panel-title > a,
+		.panel-title > a:hover,
+		.panel-title > a:focus {
+			color: #fff;
+		}
+	}
+}
+.panel-group {
+	&.accordion-icon-filled {
+		&.accordion-icon-left {
+			&.accordion-icon-filled-theme-colored2 {
+				.panel-heading {
+					.panel-title {
+						a {
+							&:before {
+								background-color:@theme-color2;
+							}
+							&:after {
+								background-color:@theme-color2;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.accordion-icon-right {
+			&.accordion-icon-filled-theme-colored2 {
+				.panel-heading {
+					.panel-title {
+						a {
+							&:after {
+								background-color:@theme-color2;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

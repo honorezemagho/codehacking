@@ -1,0 +1,54 @@
+/*
+ * pricing-table.less
+ * -----------------------------------------------
+*/
+.pricing-table {
+	background-color: #fff;
+	.transition(all 0.3s ease);
+	.pricing-content {
+		padding: 30px;
+	}
+	.package-title {
+		font-weight: 700;
+		font-size: 28px;
+		color: #333;
+	}
+	.package-pricing {
+		color: #999;
+		font-weight: 400;
+		font-size: 36px;
+	}
+	.package-subtitle {
+		color: #bbb;
+	}
+	.package-checklist {
+		margin-top: 20px;
+		li {
+			padding: 7px 0 7px 20px;
+			font-size: 15px;
+			position: relative;
+			&:before {
+				border: none;
+				color: #777;
+				content: "\4e";
+				font-family: ElegantIcons;
+				font-size: 15px;
+				padding: 0;
+				left: 0;
+				position: absolute;
+				top: 7px;
+			}
+		}
+	}
+	.pricing-icon {
+		font-size: 32px;
+		background: #eee;
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+		display: inline-block;
+		i {
+			line-height: 80px;
+		}
+	}
+}
